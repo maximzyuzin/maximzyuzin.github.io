@@ -28,12 +28,15 @@
     ],
     "rules": {
         "@typescript-eslint/no-var-requires": 0,
+        "@typescript-eslint/no-inferrable-types": 0,
         "@typescript-eslint/triple-slash-reference": "error",
         "react/jsx-uses-vars": "error",
         "react/jsx-uses-react": "error",
         "prettier/prettier": [
             "error",
             {
+                "singleQuote": true,
+                "parser": "flow",
                 "endOfLine": "auto"
             }
         ]
