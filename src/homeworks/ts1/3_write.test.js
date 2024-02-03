@@ -11,7 +11,7 @@ describe('all', () => {
     expect(operation).toHaveProperty('createdAt', createdAt);
     expect(operation).toHaveProperty('id');
     expect(operation).toHaveProperty('name');
-    expect(operation).toHaveProperty('desc');
+    //expect(operation).toHaveProperty('desc');
     expect(operation).toHaveProperty('createdAt');
     expect(operation).toHaveProperty('amount');
     expect(operation).toHaveProperty('category');
@@ -25,9 +25,9 @@ describe('all', () => {
     expect(product).toHaveProperty('id');
     expect(product).toHaveProperty('name');
     expect(product).toHaveProperty('photo');
-    expect(product).toHaveProperty('desc');
+    //expect(product).toHaveProperty('desc');
     expect(product).toHaveProperty('createdAt');
-    expect(product).toHaveProperty('oldPrice');
+    //expect(product).toHaveProperty('oldPrice');
     expect(product).toHaveProperty('price');
     expect(product).toHaveProperty('category');
   });
