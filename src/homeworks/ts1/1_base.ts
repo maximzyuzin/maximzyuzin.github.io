@@ -8,7 +8,7 @@ export const addPlus = (string: string): string => `+${string}`;
 
 export const removeFirstZeros = (value: string): string => value.replace(/^(-)?[0]+(-?\d+.*)$/, '$1$2');
 
-export const getBeautifulNumber = (value: string, separator = ' '): string =>
+export const getBeautifulNumber = (value: number, separator = ' '): string =>
   value?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separator);
 
 export const round = (value: number, accuracy = 2): number => {
