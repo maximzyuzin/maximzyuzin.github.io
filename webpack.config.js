@@ -20,6 +20,12 @@ module.exports = (_, args) => {
       hot: true,
       historyApiFallback: true,
       host,
+      static: [
+        {
+          directory: path.join(__dirname, 'src', 'assets', 'svgs', 'products'),
+          publicPath: '/assets/svgs/products',
+        },
+      ],
     },
     resolve: {
       modules: [src, 'node_modules'],
@@ -65,6 +71,23 @@ module.exports = (_, args) => {
           test: /\.svg/,
           type: 'asset/inline',
         },
+        // {
+        //   test: /\.svg$/,
+        //   exclude: /src\/assets\/svgs\/products/,
+        //   use: ['@svgr/webpack'],
+        // },
+        // {
+        //   test: /\.svg$/,
+        //   include: /src\/assets\/svgs\/products/,
+        //   use: [
+        //     {
+        //       loader: 'file-loader',
+        //       options: {
+        //         name: 'assets/svgs/products/[name].[ext]',
+        //       },
+        //     },
+        //   ],
+        // },
         {
           test: /\.s[ac]ss$/i,
           use: [
@@ -80,6 +103,33 @@ module.exports = (_, args) => {
               },
             },
             'sass-loader',
+          ],
+        },
+        {
+          test: /\.module\.s([ca])ss$/,
+          use: [
+            'style-loader',
+            {
+              loader: MiniCssExtractPlugin.loader,
+              options: {
+                esModule: false,
+              },
+            },
+            {
+              loader: '@teamsupercell/typings-for-css-modules-loader',
+              options: {
+                formatter: 'prettier',
+              },
+            },
+            {
+              loader: 'css-loader',
+              options: {
+                modules: {
+                  exportLocalsConvention: 'camelCaseOnly',
+                  localIdentName: '[local]__[contenthash:base64:5]',
+                },
+              },
+            },
           ],
         },
       ],
