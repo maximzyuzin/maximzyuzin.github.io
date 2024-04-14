@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './button.module.sass';
+import s from './Button.module.sass';
 
 interface ButtonProps {
   /**
@@ -30,12 +30,7 @@ interface ButtonProps {
 export function Button({ primary = false, size = 'medium', backgroundColor, label, ...props }: ButtonProps) {
   const mode = primary ? s.primary : s.secondary;
   return (
-    <button
-      type="button"
-      className={[s.button, s[size], mode].join(' ')}
-      style={{ backgroundColor }}
-      {...props}
-    >
+    <button type="button" className={[s.button, s[size], mode].join(' ')} style={{ backgroundColor }} {...props}>
       {label}
     </button>
   );
