@@ -6,6 +6,7 @@ import { Page } from './Page';
 const meta: Meta<typeof Page> = {
   title: 'Storybook - Example/Page',
   component: Page,
+  tags: ['autodocs'],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
