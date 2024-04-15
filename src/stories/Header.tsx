@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './Button';
-import './Header.css';
+import s from './Header.module.scss';
 
 type User = {
   name: string;
@@ -16,7 +16,7 @@ interface HeaderProps {
 export function Header({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) {
   return (
     <header>
-      <div className="storybook-header">
+      <div className={s['storybook-header']}>
         <div>
           <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
             <g fill="none" fillRule="evenodd">
@@ -30,7 +30,7 @@ export function Header({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
         <div>
           {user ? (
             <>
-              <span className="welcome">
+              <span className={s.welcome}>
                 Welcome, <b>{user.name}</b>!
               </span>
               <Button size="small" onClick={onLogout} label="Log out" />
