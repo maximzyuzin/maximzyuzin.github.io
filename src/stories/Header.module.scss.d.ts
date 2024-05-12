@@ -3,7 +3,7 @@
 declare namespace HeaderModuleScssNamespace {
   export interface IHeaderModuleScss {
     'storybook-header': string;
-    welcome1: string;
+    welcome: string;
   }
 }
 
