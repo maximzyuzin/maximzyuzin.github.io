@@ -1,23 +1,29 @@
 import React, { FC } from 'react';
 import styles from './Button.module.scss';
 
-interface ButtonProps {
-  label: string,
-  size: 'small' | 'medium' | 'large';
-  backgroundColor?: string;
-}
+interface IButton {
+  label?: string,
+  size?: 'small' | 'medium' | 'large',
+  backgroundColor?: string,
+  onClick?: () => void,
+};
 
-export const Button: FC<ButtonProps> = ({ label, size, backgroundColor = '#186ce9', ...props }) => {
+export const Button: FC<IButton> = ({ label, size, backgroundColor = '#186ce9', onClick, ...props }) => {
   const buttonClass: string = styles.button;
   const buttonSize: string = styles[size];
 
-  const onClick = () => {
+  const onClickDefault = () => {
     alert('Привет Мир!');
   };
 
   return (
     <div>
-      <button type="button" style={{ backgroundColor }} className={[buttonClass, buttonSize].join(' ')} onClick={onClick} {...props}>
+      <button
+        type="button"
+        style={{ backgroundColor }}
+        className={[buttonClass, buttonSize].join(' ')}
+        onClick={onClick ? onClick : onClickDefault}
+        {...props}>
         {label}
       </button>
     </div >
