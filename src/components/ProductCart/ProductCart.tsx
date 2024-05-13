@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import * as styles from './ProductCart.module.scss';
+import styles from './ProductCart.module.scss';
 import DeleteOutlineSharpIcon from '@mui/icons-material/DeleteOutlineSharp';
 
 export interface IProductCart {

@@ -1,6 +1,6 @@
 
 import React, { FC } from 'react';
-import * as styles from './ProductShort.module.scss';
+import styles from './ProductShort.module.scss';
 import DeleteOutlineSharpIcon from '@mui/icons-material/DeleteOutlineSharp';
 
 export interface IProductShort {

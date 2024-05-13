@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import * as styles from './ProductMain.module.scss';
+import styles from './ProductMain.module.scss';
 import DeleteOutlineSharpIcon from '@mui/icons-material/DeleteOutlineSharp';
 
 interface IProductMain {
