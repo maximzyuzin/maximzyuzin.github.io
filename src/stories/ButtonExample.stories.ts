@@ -1,11 +1,11 @@
 import type { Meta } from '@storybook/react';
 
-import { Button } from './Button';
+import { ButtonExample } from './ButtonExample';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
-const meta: Meta<typeof Button> = {
-  title: 'Storybook - Example/Button',
-  component: Button,
+const meta: Meta<typeof ButtonExample> = {
+  title: 'Storybook - Example/ButtonExample',
+  component: ButtonExample,
   tags: ['autodocs'],
   argTypes: {
     backgroundColor: { control: 'color' },

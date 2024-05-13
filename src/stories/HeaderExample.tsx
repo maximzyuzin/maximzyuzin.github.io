@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from './Button';
-import s from './Header.module.scss';
+import { ButtonExample } from './ButtonExample';
+import s from './HeaderExample.module.scss';
 
 type User = {
   name: string;
@@ -13,7 +13,7 @@ interface HeaderProps {
   onCreateAccount: () => void;
 }
 
-export function Header({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) {
+export function HeaderExample({ user, onLogin, onLogout, onCreateAccount }: HeaderProps) {
   return (
     <header>
       <div className={s['storybook-header']}>
@@ -33,12 +33,12 @@ export function Header({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
               <span className={s.welcome}>
                 Welcome, <b>{user.name}</b>!
               </span>
-              <Button size="small" onClick={onLogout} label="Log out" />
+              <ButtonExample size="small" onClick={onLogout} label="Log out" />
             </>
           ) : (
             <>
-              <Button size="small" onClick={onLogin} label="Log in" />
-              <Button primary size="small" onClick={onCreateAccount} label="Sign up" />
+              <ButtonExample size="small" onClick={onLogin} label="Log in" />
+              <ButtonExample primary size="small" onClick={onCreateAccount} label="Sign up" />
             </>
           )}
         </div>

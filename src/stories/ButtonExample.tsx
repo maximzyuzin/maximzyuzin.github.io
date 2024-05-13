@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './Button.module.scss';
+import s from './ButtonExample.module.scss';
 
-interface ButtonProps {
+interface ButtonExampleProps {
   /**
    * Is this the principal call to action on the page?
    */
@@ -27,7 +27,7 @@ interface ButtonProps {
 /**
  * Primary UI component for user interaction
  */
-export function Button({ primary = false, size = 'medium', backgroundColor, label, ...props }: ButtonProps) {
+export function ButtonExample({ primary = false, size = 'medium', backgroundColor, label, ...props }: ButtonExampleProps) {
   const mode = primary ? s.primary : s.secondary;
   return (
     <button type="button" className={[s.button, s[size], mode].join(' ')} style={{ backgroundColor }} {...props}>

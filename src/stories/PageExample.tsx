@@ -1,17 +1,17 @@
 import React from 'react';
-import { Header } from './Header';
-import s from './Page.module.scss';
+import { HeaderExample } from './HeaderExample';
+import s from './PageExample.module.scss';
 
 type User = {
   name: string;
 };
 
-export const Page: React.FC = () => {
+export const PageExample: React.FC = () => {
   const [user, setUser] = React.useState<User>();
 
   return (
     <article>
-      <Header
+      <HeaderExample
         user={user}
         onLogin={() => setUser({ name: 'Jane Doe' })}
         onLogout={() => setUser(undefined)}

@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { within, userEvent } from '@storybook/testing-library';
 
-import { Page } from './Page';
+import { PageExample } from './PageExample';
 
-const meta: Meta<typeof Page> = {
-  title: 'Storybook - Example/Page',
-  component: Page,
+const meta: Meta<typeof PageExample> = {
+  title: 'Storybook - Example/PageExample',
+  component: PageExample,
   tags: ['autodocs'],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
