@@ -1,5 +1,5 @@
 import React, { FC, useEffect, useState } from "react";
-import * as styles from './Modal.module.scss';
+import styles from './Modal.module.scss';
 import { CloseSharp } from '@mui/icons-material';
 
 export interface IModal {
