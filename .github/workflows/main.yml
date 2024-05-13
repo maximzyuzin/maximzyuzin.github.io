@@ -18,6 +18,9 @@ jobs:
       matrix:
         node-version: [18.x]
 
+    env:
+      SRC_DIR: 'src'
+
     steps:
       - uses: actions/checkout@v3
 
