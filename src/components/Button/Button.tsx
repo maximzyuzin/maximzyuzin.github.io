@@ -1,14 +1,14 @@
 import React, { FC } from 'react';
-import styles from './CustomButton.module.scss';
+import styles from './Button.module.scss';
 
-interface ICustomButton {
+interface IButton {
   label?: string,
   size?: 'small' | 'medium' | 'large',
   backgroundColor?: string,
   onClick?: () => void,
 };
 
-const CustomButton: FC<ICustomButton> = ({ label, size, backgroundColor = '#186ce9', onClick, ...props }) => {
+const Button: FC<IButton> = ({ label, size, backgroundColor = '#186ce9', onClick, ...props }) => {
   const buttonClass: string = styles.button;
   const buttonSize: string = styles[size];
 
@@ -30,4 +30,4 @@ const CustomButton: FC<ICustomButton> = ({ label, size, backgroundColor = '#186c
   );
 };
 
-export default CustomButton;
+export default Button;

@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import CustomButton from './CustomButton';
+import Button from './Button';
 
-const meta: Meta<typeof CustomButton> = {
-  title: 'Курс обучения React - OTUS / Components / CustomButton',
-  component: CustomButton,
+const meta: Meta<typeof Button> = {
+  title: 'Курс обучения React - OTUS / Components / Button',
+  component: Button,
   tags: ['autodocs'],
   argTypes: {
     backgroundColor: { control: 'color' },

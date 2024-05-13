@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import Modal, { IModal } from './Modal';
-import Button from 'src/components/CustomButton/CustomButton';
+import Button from 'src/components/Button/Button';
 
 const meta: Meta<typeof Modal> = {
   title: 'Курс обучения React - OTUS / Components / Modal',
