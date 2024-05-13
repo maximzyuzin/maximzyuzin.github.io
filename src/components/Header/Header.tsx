@@ -1,7 +1,7 @@
 import React, { FC, useContext } from 'react';
 import * as styles from './Header.module.scss';
 import { Logo } from '../Logo/Logo';
-import { Button } from '../Button/Button';
+import Button from '../Button/Button';
 
 interface IHeader {
   size?: string,
