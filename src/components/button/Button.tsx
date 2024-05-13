@@ -8,7 +8,7 @@ interface IButton {
   onClick?: () => void,
 };
 
-export const Button: FC<IButton> = ({ label, size, backgroundColor = '#186ce9', onClick, ...props }) => {
+const Button: FC<IButton> = ({ label, size, backgroundColor = '#186ce9', onClick, ...props }) => {
   const buttonClass: string = styles.button;
   const buttonSize: string = styles[size];
 
@@ -29,3 +29,5 @@ export const Button: FC<IButton> = ({ label, size, backgroundColor = '#186ce9', 
     </div >
   );
 };
+
+export default Button;
