@@ -27,12 +27,10 @@ export const Header: FC<IHeader> = ({ size }) => {
           <h1>PROJECT - OTUS</h1>
         </div>
         <div>
-          <>
-            <span className={styles.welcome}>
-              {t('header.welcome')}
-            </span>
-            <Button label="Log out" onClick={() => alert('Привет Мир!')} />
-          </>
+          <span className={styles.welcome}>
+            {t('header.welcome')}
+          </span>
+          <Button label="Log out" onClick={() => alert('Привет Мир!')} />
           <ButtonTheme />
           <ButtonLanguage />
         </div>

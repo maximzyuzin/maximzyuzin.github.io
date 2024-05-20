@@ -15,7 +15,7 @@ const trunscateString = (value: string, maxSize: number): string => {
   else return value.substring(0, maxSize - 3) + '...'
 };
 
-export const ProductShort: FC<IProductShort> = ({ price, image, description, name, ...props }) => {
+export const ProductShort: FC<IProductShort> = ({ price, image, description, name }) => {
   return (
     <div className={styles.shortProductCard}>
       <div className={styles.imageContainer}>

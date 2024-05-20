@@ -4,7 +4,7 @@ interface LogoProps {
   size?: string,
 };
 
-export const Logo: FC<LogoProps> = ({ size, ...props }) => {
+export const Logo: FC<LogoProps> = ({ size }) => {
   return (
     <div>
       <svg width="34" height="41" viewBox="0 0 34 41" fill="none" xmlns="http://www.w3.org/2000/svg">

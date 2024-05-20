@@ -7,19 +7,18 @@ interface ProductCartIconProps {
   count?: number,
 }
 
-export const ProductCartIcon: FC<ProductCartIconProps> = ({ count, ...props }) => {
+export const ProductCartIcon: FC<ProductCartIconProps> = ({ count }) => {
   return (
-    <>
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-        {count > 0 ?
-          <><input value={count} style={{ maxWidth: '200px', border: 'none' }} />
-            <div>
-              <button><RemoveIcon /></button>
-              <button><AddIcon /></button>
-            </div>
-          </>
-          : <button><ShoppingBasketIcon /></button>}
-      </div>
-    </>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
+      {count ?
+        <><input value={count} style={{ maxWidth: '200px', border: 'none' }} />
+          <div>
+            <button><RemoveIcon /></button>
+            <button><AddIcon /></button>
+          </div>
+        </>
+        :
+        <button><ShoppingBasketIcon /></button>}
+    </div>
   );
 };

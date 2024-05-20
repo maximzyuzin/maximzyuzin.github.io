@@ -9,7 +9,7 @@ export interface IProductCart {
   image?: string,
 };
 
-export const ProductCart: FC<IProductCart> = ({ price, image, description, name, ...props }) => {
+export const ProductCart: FC<IProductCart> = ({ price, image, description, name }) => {
   return (
     <div className={styles.shortProductCard}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#F5F7FF' }} >
