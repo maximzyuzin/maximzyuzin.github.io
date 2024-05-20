@@ -7,7 +7,7 @@ interface IHeader {
   size?: string,
 };
 
-export const Header: FC<IHeader> = ({ size, ...props }) => {
+export const Header: FC<IHeader> = ({ size }) => {
   return (
     <header>
       <div className={styles["storybook-header"]}>
@@ -16,11 +16,9 @@ export const Header: FC<IHeader> = ({ size, ...props }) => {
           <h1>PROJECT - OTUS</h1>
         </div>
         <div>
-          <>
-            <span className={styles.welcome}>
-            </span>
-            <Button size="small" label="Log out" onClick={() => alert('Привет Мир!')} />
-          </>
+          <span className={styles.welcome}>
+          </span>
+          <Button size="small" label="Log out" onClick={() => alert('Привет Мир!')} />
         </div>
       </div>
     </header>
