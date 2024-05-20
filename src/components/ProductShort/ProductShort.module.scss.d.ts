@@ -2,15 +2,15 @@
 // Please do not change this file!
 declare namespace ProductShortModuleScssNamespace {
   export interface IProductShortModuleScss {
-    'button-container': string;
+    buttonContainer: string;
     description: string;
     image: string;
-    'image-container': string;
-    'info-container': string;
+    imageContainer: string;
+    infoContainer: string;
     name: string;
-    'no-image': string;
+    noImage: string;
     price: string;
-    'short-product-card': string;
+    shortProductCard: string;
   }
 }
 

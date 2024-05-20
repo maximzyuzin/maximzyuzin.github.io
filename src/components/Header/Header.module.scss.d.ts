@@ -2,10 +2,8 @@
 // Please do not change this file!
 declare namespace HeaderModuleScssNamespace {
   export interface IHeaderModuleScss {
-    link: string;
-    'link-active': string;
-    'link-visited': string;
-    'storybook-header': string;
+    logo: string;
+    storybookHeader: string;
     welcome: string;
   }
 }

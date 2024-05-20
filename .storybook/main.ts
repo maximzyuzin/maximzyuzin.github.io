@@ -73,7 +73,10 @@ const config: StorybookConfig = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: {
+                exportLocalsConvention: 'camelCaseOnly',
+                localIdentName: '[local]__[contenthash:base64:5]',
+              }
             },
           },
           'sass-loader',
@@ -93,7 +96,10 @@ const config: StorybookConfig = {
           {
             loader: 'css-loader',
             options: {
-              modules: true,
+              modules: {
+                exportLocalsConvention: 'camelCaseOnly',
+                localIdentName: '[local]__[contenthash:base64:5]',
+              }
             },
           },
           'sass-loader',
