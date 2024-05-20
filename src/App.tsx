@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ThemeProvider } from '../src/components/Provider/ThemeProvider';
 
 function App() {
   return (

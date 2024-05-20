@@ -2,9 +2,9 @@
 // Please do not change this file!
 declare namespace ProductMainModuleScssNamespace {
   export interface IProductMainModuleScss {
-    'storybook-page': string;
+    storybookPage: string;
     tip: string;
-    'tip-wrapper': string;
+    tipWrapper: string;
   }
 }
 

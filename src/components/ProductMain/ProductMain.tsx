@@ -12,7 +12,7 @@ interface IProductMain {
 
 export const ProductMain: FC<IProductMain> = ({ category, title, description, imageLink, price }) => {
   return (
-    <section className={styles["storybook-page"]}>
+    <section className={styles.storybookPage}>
       <h3>{category}</h3>
       <div style={{ display: 'flex', justifyContent: 'space-between' }}><h2>{title}</h2>  <DeleteOutlineSharpIcon style={{ opacity: '0.2', padding: '5px' }} /></div>
       <br />

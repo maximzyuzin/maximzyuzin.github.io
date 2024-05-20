@@ -2,7 +2,7 @@
 // Please do not change this file!
 declare namespace ProductCartModuleScssNamespace {
   export interface IProductCartModuleScss {
-    'short-product-card': string;
+    shortProductCard: string;
   }
 }
 
