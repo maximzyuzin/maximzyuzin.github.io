@@ -10,7 +10,7 @@ interface IProductMain {
   price?: number,
 }
 
-export const ProductMain: FC<IProductMain> = ({ category, title, description, imageLink, price, ...props }) => {
+export const ProductMain: FC<IProductMain> = ({ category, title, description, imageLink, price }) => {
   return (
     <section className={styles["storybook-page"]}>
       <h3>{category}</h3>
