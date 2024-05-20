@@ -11,7 +11,7 @@ interface IHeader {
   size?: string,
 };
 
-export const Header: FC<IHeader> = ({ size, ...props }) => {
+export const Header: FC<IHeader> = ({ size }) => {
   const [theme,] = useContext(ThemeContext);
   const { t } = useTranslation();
 

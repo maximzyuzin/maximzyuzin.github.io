@@ -18,15 +18,15 @@ const trunscateString = (value: string, maxSize: number): string => {
 export const ProductShort: FC<IProductShort> = ({ price, image, description, name, ...props }) => {
   return (
     <div className={styles.shortProductCard}>
-      <div style={{ display: 'flex', justifyContent: 'space-between' }} >
-        <img height={'70px'} src={image} /> <DeleteOutlineSharpIcon style={{ opacity: '0.4', padding: '5px' }} />
+      <div className={styles.imageContainer}>
+        <img className={styles.image} src={image} /> <DeleteOutlineSharpIcon className={styles.buttonIcon} />
       </div>
-      <div style={{ backgroundColor: '#F5F7FF' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-around' }}><h3>{name}</h3> <h3>{price + ' Р'}</h3></div>
-        <div className={styles.infoContainer}>
+      <div className={styles.infoContainer}>
+        <div className={styles.description}><h3>{name}</h3> <h3>{price + ' Р'}</h3></div>
+        <div className={styles.description}>
           <div dangerouslySetInnerHTML={{ __html: trunscateString(description, 80) }} />
         </div>
       </div>
-    </div>
+    </div >
   );
 };
