@@ -11,7 +11,8 @@ export const ProductCartIcon: FC<ProductCartIconProps> = ({ count }) => {
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
       {count ?
-        <><input value={count} style={{ maxWidth: '200px', border: 'none' }} />
+        <>
+          <input value={count} style={{ maxWidth: '200px', border: 'none' }} />
           <div>
             <button><RemoveIcon /></button>
             <button><AddIcon /></button>
