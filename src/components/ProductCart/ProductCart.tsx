@@ -11,7 +11,7 @@ export interface IProductCart {
 
 export const ProductCart: FC<IProductCart> = ({ price, image, description, name }) => {
   return (
-    <div className={styles["short-product-card"]}>
+    <div className={styles.shortProductCard}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', backgroundColor: '#F5F7FF' }} >
         <img height={'70px'} src={image} />
         <div ><h3>{name}</h3>  </div><div ><h3>{price + ' P'}</h3></div>

@@ -2,7 +2,7 @@
 // Please do not change this file!
 declare namespace HeaderExampleModuleScssNamespace {
   export interface IHeaderExampleModuleScss {
-    'storybook-header': string;
+    storybookHeader: string;
     welcome: string;
   }
 }

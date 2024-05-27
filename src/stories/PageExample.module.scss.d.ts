@@ -2,9 +2,9 @@
 // Please do not change this file!
 declare namespace PageExampleModuleScssNamespace {
   export interface IPageExampleModuleScss {
-    'storybook-page': string;
+    storybookPage: string;
     tip: string;
-    'tip-wrapper': string;
+    tipWrapper: string;
   }
 }
 
